@@ -12,7 +12,7 @@ else{clear(); i=0;}
 function clear(){
 document.getElementById("n").value="";
 document.getElementById("g").innerHTML="Go...";
-document.getElementById("dis").innerHTML="";
+document.getElementById("dis").innerHTML=""; 
 document.getElementById("dis1").innerHTML="";
 c1="";
 }
@@ -220,6 +220,7 @@ else{if(a==10){c1=c1+"Ten";}
 }
 }
 }
+else{c1="Out Of Range.."}
 }
 document.getElementById("dis").innerHTML=c1;
 document.getElementById("dis1").innerHTML=aa;
@@ -259,12 +260,13 @@ function pos2(n1){
 }
 </script>
 </head>
-<body style="font-family:montserrat; background-image:linear-gradient(120deg,#19dbfb,#09d3d2);">
-<h1><center><u><b>Enter Any Number..</b></u></center></h1><br>
+<body style="font-family:montserrat; background-image:linear-gradient(70deg,#19dbfb,#b8e994);">
+<h1><center><u><b>Number To Word <br>Converter</b></u></center></h1><br>
 <font size="28">
 <p><input type="number" id="n" placeholder="Enter Number" style="border:none; background:none; border-bottom:2px solid #000; font-size:20; width:220px; outline:none;"><br><br>
-<button id="g" onclick="goo()" style="font-size:27; background:#feca57;">Go...</button></p></font>
-<h4 id="dis" style="font-size:24; font-family:arial;"></h4>
+<button id="g" onclick="goo()" style="font-size:27; background:linear-gradient(90deg,#feca57,#e55039); display:inline-block; padding: 3px 5px;
+margin: 4px 0; text-decoration: none; border:none; border-radius:40px;">Go...</button></p></font>
+<h4 id="dis" style="font-size:24;letter-spacing:0.5; font-family:arial;"></h4>
 <h4 id="dis1"></h4>
 </body>
 </html>
