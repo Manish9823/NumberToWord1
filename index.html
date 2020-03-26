@@ -21,6 +21,69 @@ var aa=document.getElementById("n").value;
 a=aa;
 if(a==0){c1="zero";}
 else{
+if(a<10000000000000000000)
+{if(a>99999999999999999){
+c=a;
+c=Math.floor(c/100000000000000000);
+b=Math.floor(a/1000000000000000000);
+if(c>20){
+pos1(b);
+c=c%10;
+if(c<10){pos(c);}
+}
+else{
+b=c;
+if(c>10){
+pos2(b);
+}
+else{if(c==10){c1=c1+"Ten";}
+      if(c<10){pos(c);} }
+}
+c1=c1+" Sankh ";
+}
+ a=a%100000000000000000;
+if(a<100000000000000000)
+{if(a>999999999999999){
+c=a;
+c=Math.floor(c/1000000000000000);
+b=Math.floor(a/10000000000000000);
+if(c>20){
+pos1(b);
+c=c%10;
+if(c<10){pos(c);}
+}
+else{
+b=c;
+if(c>10){
+pos2(b);
+}
+else{if(c==10){c1=c1+"Ten";}
+      if(c<10){pos(c);} }
+}
+c1=c1+" Padam ";
+}
+ a=a%1000000000000000;
+if(a<1000000000000000)
+{if(a>9999999999999){
+c=a;
+c=Math.floor(c/10000000000000);
+b=Math.floor(a/100000000000000);
+if(c>20){
+pos1(b);
+c=c%10;
+if(c<10){pos(c);}
+}
+else{
+b=c;
+if(c>10){
+pos2(b);
+}
+else{if(c==10){c1=c1+"Ten";}
+      if(c<10){pos(c);} }
+}
+c1=c1+" Nil ";
+}
+ a=a%10000000000000;
 if(a<10000000000000)
 {if(a>99999999999){
 c=a;
@@ -39,7 +102,7 @@ pos2(b);
 else{if(c==10){c1=c1+"Ten";}
       if(c<10){pos(c);} }
 }
-c1=c1+" kharab ";
+c1=c1+" Kharab ";
 }
  a=a%100000000000;
 if(a<100000000000)
@@ -154,10 +217,13 @@ else{if(a==10){c1=c1+"Ten";}
 }
 }
 }
+}
+}
+}
+}
 document.getElementById("dis").innerHTML=c1;
 document.getElementById("dis1").innerHTML=aa;
 document.getElementById("g").innerHTML="clear";
-}
 }
 function pos(n1){
  if(n1==1){c1=c1+" One";}
@@ -193,10 +259,10 @@ function pos2(n1){
 }
 </script>
 </head>
-<body style="font-family:montserrat; background-image:linear-gradient(120deg,#29dbfb,#01d3d2);">
+<body style="font-family:montserrat; background-image:linear-gradient(120deg,#19dbfb,#09d3d2);">
 <h1><center><u><b>Enter Any Number..</b></u></center></h1><br>
 <font size="20">
-<p><input type="number" id="n" placeholder="Enter Number" style="border:none; background:none; border-bottom:2px solid #000; font-size:20; width:150px; outline:none;"><br><br>
+<p><input type="number" id="n" placeholder="Enter Number" style="border:none; background:none; border-bottom:2px solid #000; font-size:20; width:220px; outline:none;"><br><br>
 <button id="g" onclick="goo()" style="font-size:25; background:#e4b324;">Go...</button></p></font>
 <h4 id="dis" style="font-size:21;"></h4>
 <h4 id="dis1"></h4>
