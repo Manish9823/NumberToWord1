@@ -1,11 +1,20 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="manifest.json">
 <script type="text/javascript">
+
+if('serviceWorker' in navigator){
+navigator.serviceWorker.register('/sw.js')
+   .then(function() {
+      console.log("sw register");
+  });
+}
+
 var m,n,c1;
 c1="";
 var a,b,c,i;
-function goo(){
+function goo(){s
 if(i!=1){go(); i=1;}
 else{clear(); i=0;}
 }
@@ -229,14 +238,8 @@ margin: 4px 0; text-decoration: none; border:none; border-radius:40px;">Go...</b
 <h4 id="dis" style="font-size:24;letter-spacing:0.5; font-family:arial;"></h4>
 <h4 id="dis1"></h4>
 
-
-<!-- hitwebcounter Code START -->
-<a href="https://www.hitwebcounter.com" target="_blank">
-<img src="https://hitwebcounter.com/counter/counter.php?page=7225641&style=0042&nbdigits=5&type=page&initCount=0" title="User Stats" Alt="PHP Hits Count"   border="0" >
-</a>                                    
-                                    
-                                        
-                                          
+                                 
+                                                                            
                             
                             
 </body>
